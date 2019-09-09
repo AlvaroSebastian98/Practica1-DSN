@@ -1,0 +1,23 @@
+{{> head }}
+
+{{> navbar }}
+    
+    <div class="jumbotron">
+        <!-- <h1 class="display-4">Hello, {{capitalizar 'alvaro manuico'}}!</h1> -->
+        <h1 class="display-4">Hola, {{capitalizar nombre}}!</h1>
+        <p class="lead">Mira información acerca de los productos que ofrecemos</p>
+        <hr class="my-4">
+
+        <div><a href="/add">Agrega un producto</a></div>
+
+        <form action="/buscar" method="post" style="text-align: center" >
+            <label for="inputAddress">Busca un producto</label>
+            <input type="text" name="nombre" id="nombre">
+            <button type="submit" class="btn btn-primary">Buscar</button>
+        </form>  
+
+        {{{productos}}} <!-- Así interpreta que es HTML lo que se mostrará-->
+        
+    </div>
+
+{{> footer}}

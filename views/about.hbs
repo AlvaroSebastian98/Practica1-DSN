@@ -1,0 +1,21 @@
+{{> head }}
+ 
+{{> navbar }}
+    
+<div class="row container">
+    <div class="col-8">
+        <h1>{{producto}}</h1>
+        <br>
+        <h2>Precio</h2>
+        <p>${{precio}}</p>
+        <h2>Categoría</h2>
+        <p>{{categoria}}</p>
+        <h2>Stock</h2>
+        <p>{{stock}}</p>
+    </div>
+    <div class="col-4">
+        <img src="/assets/img/{{imagen}}" class="img-thumbnail">
+    </div>
+</div>
+
+{{> footer}}
